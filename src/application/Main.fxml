@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="435.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <BorderPane prefHeight="435.0" prefWidth="530.0">
+         <center>
+            <Pane id="paneText" fx:id="paneText" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label id="text" fx:id="text" text="Programming is fun" />
+               </children>
+            </Pane>
+         </center>
+         <bottom>
+            <Slider id="slH" fx:id="slH" onMouseDragged="#horizontal" showTickLabels="true" showTickMarks="true" BorderPane.alignment="CENTER" />
+         </bottom>
+         <right>
+            <Slider id="slV" fx:id="slV" onMouseDragged="#vertical" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
